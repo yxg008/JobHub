@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Information</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styleUser.css">
+    <script src="JavaScript.js"> </script>
+</head>
+<body>
+    <!-- Container -->
+    <div class="container mt-4">
+        <!-- Header -->
+        <h1 class="text-center">Create Your Account</h1>
+        
+        <!-- Form Section -->
+        <form action="submit-form.php" method="post">
+            <!-- Account Type -->
+            <fieldset class="mb-3">
+                <legend>Account Type</legend>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="login" name="login">
+                    <label class="form-check-label" for="login">Login</label>
+                </div>
+            </fieldset>
+
+            <!-- Personal Information -->
+            <fieldset class="mb-3">
+                <legend>Personal Information</legend>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Enter Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="phoneNumber" class="form-label">Phone Number:</label>
+                    <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="example@email.com" required>
+                </div>
+            </fieldset>
+            
+            <!-- Submit Button -->
+            <input type="submit" class="btn btn-primary" value="Continue">
+        </form>
+
+        <!-- Additional Links -->
+        <div class="mt-4">
+            <button type="button" class="btn btn-secondary"><a href="JobSeek.html" class="text-white">Learn More</a></button>
+            <button type="button" class="btn btn-secondary"><a href="JobSearch.html" class="text-white">Login/Register</a></button>
+        </div>
+        
+        <!-- Explore More Section -->
+        <h2 class="mt-4">Explore More</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Browse Jobs</li>
+            <li class="list-group-item">Mocking Interview</li>
+            <li class="list-group-item">Upcoming Career</li>
+        </ul>
+
+        <!-- JavaScript Action Buttons -->
+        <div class="mt-4">
+            <button type="button" class="btn btn-info" onclick="toggleLogin()">Toggle Login Checkbox</button>
+            <button type="button" class="btn btn-info" onclick="showAlert()">Show Alert</button>
+            <button type="button" class="btn btn-info" onclick="addExploreMoreItem()">Add Explore More Item</button>
+        </div>
+    
+    </div>
+    
+</body>
+</html>
