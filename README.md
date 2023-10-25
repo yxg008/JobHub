@@ -25,5 +25,5 @@ JobHub 1.0 is your one-stop solution for job hunting. With an easy-to-use and vi
 
 ## Installation
 ```bash
-git clone https://github.com/yourusername/JobHub1.0.git
+git clone https://github.com/yxg008/JobHub1.0.git
 cd JobHub1.0
